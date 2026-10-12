@@ -1,0 +1,242 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.front-about__inner, .front-service__inner, .front-contact__inner, .front-news__inner {
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+
+
+/* ヘッダー */
+.header {
+   border-bottom: 70px solid #111111;
+}
+
+.header-logo {
+    width: 170px;
+    height: auto;
+ }
+
+.header-inner {
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   padding: 10px 25px;
+}
+
+.header-nav__list {
+   display: flex;
+   align-items: center;
+ list-style: none;
+}
+
+.header-nav__item {
+   padding: 10px;
+   margin-right: 25px;
+}
+
+.fas fa-file-signature {
+    display: block;
+    color: #fff;
+    background: #00abae;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+/* メイン画像 */
+.front img{
+  width: 100%;
+  height: 400px;
+}
+
+.front h2{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family :Quicksand, sans-serif;
+  top: 180px;
+  left: 303px;
+  line-height: 2.0
+  }
+
+/* タイトル */
+.front-common__title{
+   font-size: 32px;
+   text-align: center;
+   text-decoration: underline;color: rgb(0, 171, 174);
+}
+
+/* About  */
+.front-about {
+  max-width: 1100px;
+  margin: 50px auto;
+}
+.front-about__list {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.front-about__item{width: 50%;}
+
+.front-about__rogo{
+  max-width: 520px;
+  height: 155px;
+}
+
+.front-about__text h3 {
+  font-size: 25px;
+  font-weight: bold;
+   line-height: 1.5
+}
+
+.front-about__item p{margin-top: 20px;}
+.front-about__item:first-child{margin-right: 30px;}
+.front-about__item:last-child{margin-left: 30px;}
+
+/* servi */
+.front-service{
+   background: #eef8fa;  
+    padding: 50px 0;
+     line-height: 2.0
+}
+
+.front-service__list{
+ display: flex;
+ justify-content: space-between;
+ 
+}
+
+.front-service__item {
+  max-width: 40%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.front-service__item {
+  border: 1px solid #34302e;;
+  border-radius: 5px;
+  padding: 5px;
+  inline-size: 40ch;
+  margin-block-end: 1em;
+}
+
+/* news */
+.front-common__title{
+    max-width: 1100px;
+    margin: 50px auto;
+}
+.front-news__wrap a{
+    display: flex;
+    padding: 20px 5%;
+    border-bottom: solid 1px #ddd;
+}
+.front-news__wrap a time{
+    font-size: 10px;
+    color: #888;
+    background-color: #eee;
+    margin: 0 50px;
+    padding: 5px;
+    border-radius: 50px;
+}
+.front-common__btn {
+  text-align: center;
+}
+.front-common__btn a{
+  display: inline-block;
+  width: 300px;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 100px;
+  transition: .4s;
+  text-align: center;
+}
+
+
+/* contact */
+.front-contact{
+    background: #eef8fa;  
+    padding: 50px 0;
+}
+
+.front-contact__inner{
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.front-contact p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+ /* footer */
+.footer{
+    padding: 50px 0;
+    background: #303030ff;
+
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+}
+
+/* スマホ画面 */
+@media screen and (max-width: 800px) {
+  .header{
+    justify-content: center;
+    padding: 0 15px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 800px) {
+    .header{
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .header-logo{width: 100%;}
+    .menu{
+        display: none;
+    }
+    .front:img,
+    .front{width: 50%;}
+    .front{font-size: calc(100vw / 18);}
+    .front{font-size: calc(100vw / 30);}
+    .front{font-size: calc(100vw / 35);}
+    
+    /* common */
+    .common{
+        margin: 50px 0;
+    }
+    .common{
+        margin: 0 15px;
+    }
+    .common{font-size: 20px;}
+    .common{
+        text-decoration: underline;
+    }
+    /* about */
+    .front-about{font-size: calc(100vw / 20);}
+    .front-about{margin: 50px 0;}
+    .front-about{width: 100%;}
+    .front-about{display: none;}
+    
+        /* flow */
+    .front-service{
+        display: block;
+    }
+    .front-service{margin-right: 0;}
+    .front-service{margin-left: 0;}
+    .front-service{margin-bottom: 50px;}
